@@ -2,4 +2,4 @@
 
 ## Ркзультат вы можете посмотреть тут
 
-[Моя первая работа на HTML & CSS] (https://7viktor777.github.io/resume/)
+[Моя первая работа на HTML & CSS](https://7viktor777.github.io/resume/)
