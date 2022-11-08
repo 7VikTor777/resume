@@ -7,89 +7,124 @@
     <meta name="keywords" content="VIKTOR, cv, resume">
     <meta name="description" content="">
     <title>resume</title>
+    <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
 
-    <img src="imgs/avatar.jpg" width="150" alt="здесь мое фото">
-    <h2>Я Ерёмин Виктор</h2>
+    <div class="container">
 
-    <p>Я начинающий <strong>прогрммист</strong>  обучаюсь в онлайн школе по программированию <strong>Result School</strong></p>
+        <div class="info">
+            <img src="imgs/avatar.jpg" alt="здесь мое фото" class="avatar">
+
+            <div class="info-text">
+                <h2>Я Ерёмин Виктор</h2>
+
+                <p><em> Я начинающий <strong>прогрммист</strong>  обучаюсь в онлайн школе по программированию <strong>Result School</em></strong></p>
+                
+                <p>Я люблю: <em>готовить, путешествовать, заниматься спортом и программировать</em></p>
+                
+                <h4>Список социальных сетей:</h4>
+
+                <a href="https://vk.com/id71330951" target="_blank">ВКонтакте</a>
+                |
+                <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
+                |
+                <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
+
+            <ol class="list">
+                <li>Путешествие</li>
+                <li>Тренажерный зал</li>
+                <li>Рисование</li>
+                <li>Бильярд</li>
+            </ol> 
+        </div>
+        
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <!-- <thead> 
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr> 
+                </thead>-->
+                <tbody>
+                    <tr>
+                        <td>Кaфе-Ресторан</td>
+                        <td>Повар</td>
+                        <td>2006-2011</td>
+                    </tr>
+                    <tr>
+                        <td>Гостиница</td>
+                        <td>Су-шеф</td>
+                        <td>2011-2021</td>
+                    </tr>
+                    <tr>
+                        <td>Онлайн-курсы GO IT</td>
+                        <td>Junior Frontend-разработчик</td>
+                        <td>2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Онлайн-курсы Result School</td>
+                        <td>Junior Frontend-разработчик</td>
+                        <td>2022-сейчас</td>
+                    </tr>
+                </tbody>
+            </table>   
+        </div>
+
+        <div class="card bg-yellow">
+            <h2>Мой курс</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://result.school/products/junior-js?utm_source=youtube&utm_medium=result_school&utm_campaign=stream_08_10_22">Онлайн-курсы Result School Frontend Разработчика </a>
+                </li> 
+            </ul>
+            
+        </div>
     
-    <p>Я люблю <em>путешествовать, заниматься спортом и программировать</em></p>
-    
-    <h4>Список социальных сетей:</h4>
+        
 
-    <a href="https://vk.com/id71330951" target="_blank">ВКонтакте</a>
-    |
-    <a href="https://web.telegram.org/k/" target="_blank">Telegram</a>
-    |
-    <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
 
-    <hr>
+            <div class="form-row">
 
-    <h2>Мои хобби</h2>
+                <div class="form-group">
+                    <label for="name">Ваше Имя:</label>
+                    <input type="text" id="name"
+                    placeholder="Введите имя">
+                </div>
 
-    <ol>
-        <li>Должность</li>
-        <li>Тренажерный зал</li>
-        <li>Рисование</li>
-        <li>Бильярд</li>
-    </ol>
+                <div class="form-group">
+                    <label for="email">Ваше email:
+                    </label>
+                    <input type="email" id="email"
+                    placeholder="Введите email">
+                </div>
+            </div>
 
-    <h2>Опыт работы</h2>
-    <table width="500">
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr> 
-        </thead>
-        <tbody>
-            <tr>
-                <td>Кофе-Ресторан</td>
-                <td>Повар</td>
-                <td>2006-2011</td>
-            </tr>
-            <tr>
-                <td>Гостиница</td>
-                <td>Су-шеф</td>
-                <td>2011-2021</td>
-            </tr>
-            <tr>
-                <td>Онлайн-курсы GO IT</td>
-                <td>Junior Frontend-разработчик</td>
-                <td>2021-2022</td>
-            </tr>
-            <tr>
-                <td>Онлайн-курсы Result School</td>
-                <td>Junior Frontend-разработчик</td>
-                <td>2022-сейчас</td>
-            </tr>
-        </tbody>
-    </table>
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea  id="message" cols="25" rows="5" placeholder="Введите сообщение"></textarea>
+            </div>
 
-    <h2>Связаться со мной</h2>
-
-    <div>
-        <label for="name">Ваше Имя:</label>
-        <input type="text" id="name"
-        placeholder="Введите имя">
+            <input class="btn" type="submit" value="Отправить!">
+            <!-- <div> 
+                <p>
+                    <button type="submit" class="btn">Отправить!</button>
+                </p>
+            </div>-->
+        </form>
     </div>
-
-    <div>
-        <label for="email">Ваше email:</label>
-        <input type="email" id="email"
-        placeholder="Введите email">
-    </div>
-
-    <div>
-        <label for="message">Сообщение:</label>
-        <br>
-        <textarea  id="message" cols="25" rows="5" placeholder="Введите сообщение"></textarea>
-    </div>
-
-    <button type="submit">Отправить!</button>
 
 </body>
 </html>
